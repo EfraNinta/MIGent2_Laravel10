@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('role_user', function (Blueprint $table) {
-            $$table->id();
+            $table->id();
             $table->foreignId('user_id')->nullable()->index('fk_role_user_to_users');
             $table->foreignId('role_id')->nullable()->index('fk_role_user_to_role');
             $table->timestamps();

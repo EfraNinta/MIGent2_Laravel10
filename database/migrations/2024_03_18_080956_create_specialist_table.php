@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('specialist', function (Blueprint $table) {
             $table->id();
-            $table->string('nama')->unique();
+            $table->string('name')->unique();
             $table->string('price');
             $table->timestamps();
             $table->softdeletes();
